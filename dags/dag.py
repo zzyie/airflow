@@ -12,7 +12,7 @@ default_args = {
 
     'depends_on_past': False,
 
-    'start_date': datetime.now().replace(hour=8, minute=0, second=0, microsecond=0),
+    'start_date': datetime.now().replace(hour=18, minute=0, second=0, microsecond=0),
 
     # 'email_on_failure': False,
 
@@ -59,7 +59,7 @@ with DAG(
 
     description='A simple DAG',
 
-    schedule_interval='0 8 * * 1-5'  # Cron expression for 6 PM on weekdays (Mon-Fri)
+    schedule_interval='0 18 * * 1-5'  # Cron expression for 6 PM on weekdays (Mon-Fri)
 
 ) as dag: 
     
