@@ -1,0 +1,7 @@
+config/
+data/
+logs/
+plugins/
+docker-compose.yaml
+requirements.txt
+dags/__pycache__/
